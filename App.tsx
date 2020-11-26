@@ -6,6 +6,7 @@ import egg01 from "./assets/egg01.png";
 import egg02 from "./assets/egg02.png";
 import egg03 from "./assets/egg03.png";
 
+
 export default function App() {
   let [count, setCount] = useState(100);
 
