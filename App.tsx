@@ -8,13 +8,13 @@ import egg03 from "./assets/egg03.png";
 
 
 export default function App() {
-  let [count, setCount] = useState(100);
+  const [count, setCount] = useState(100);
 
   const countDown = () => {
     setCount(count - 1);
   };
 
-  let comment
+  let comment: string | number;
   if (count === 75) {
     comment = "まだまだ！";
   } else if (count === 50) {
@@ -39,7 +39,7 @@ export default function App() {
   }
 
   const clearButton = () => {
-    setCount(count * 0 + 100);
+    setCount(100);
   };
 
   return (
